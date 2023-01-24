@@ -1,7 +1,7 @@
-import React,{useContext, useState}from 'react'
+import React,{useContext, useState,useEffect}from 'react'
 import { Context } from '../..'
 import {observer} from 'mobx-react-lite'
-import { createProduct } from '../../http/productApi'
+import { createProduct,fetchBrands,fetchTypes } from '../../http/productApi'
 
 const CreateProduct = observer(() => {
     const {product} = useContext(Context)
@@ -9,9 +9,11 @@ const CreateProduct = observer(() => {
     const [name,setName]= useState('')
     const [price,setPrice]= useState(0)
     const [file,setFile] = useState(null)
-    const [brand,setBrand] = useState(null)
-    const [type,setType] = useState(null)
-    
+
+    useEffect(() => {
+        fetchTypes().then(data => product.setTypes(data))
+        fetchBrands().then(data => product.setBrands(data))
+    }, [])
 
     const addInfo = (e)=>{
         e.preventDefault()

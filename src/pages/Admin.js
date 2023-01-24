@@ -2,9 +2,10 @@ import React from 'react'
 import CreateBrand from '../components/modalwindow/CreateBrand'
 import CreateProduct from '../components/modalwindow/CreateProduct'
 import CreateType from '../components/modalwindow/CreateType'
+import {observer} from 'mobx-react-lite'
 
 
-const Admin = () => {
+const Admin = observer( () => {
   
   return (
     <div>
@@ -13,6 +14,6 @@ const Admin = () => {
       <CreateProduct />
     </div>
   )
-}
+})
 
 export default Admin

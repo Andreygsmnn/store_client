@@ -9,7 +9,7 @@ const authHost = axios.create({
 })
 
 const authInterceptor = config => {   //функция которая подставляет токен в хедеры запросов
-         config.headers.authorization = localStorage.getItem('token')    //получаем токен из локального хранилища
+         config.headers.authorization = `Bearer ${localStorage.getItem('token')}`   //получаем токен из локального хранилища
          return config
 }
 

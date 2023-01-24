@@ -30,6 +30,7 @@ const Auth = observer(({ textButton }) => {
     }
     user.setUser(user)
     user.setIsAuth(true)
+    
   }catch(e){
     alert(e.response.data.message)
   }

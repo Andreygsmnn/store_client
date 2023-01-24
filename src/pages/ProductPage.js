@@ -16,6 +16,7 @@ const ProductPage = () => {
     <div>{product.price +' руб'}</div>
     <div>{product.rating}</div>
     <h1>Характеристики</h1>
+    
     {product.info.map((info,index)=>
     <div key={info.id}> {info.title}: {info.description}</div>)}
     </>
