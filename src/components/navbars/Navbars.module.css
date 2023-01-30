@@ -1,0 +1,55 @@
+.wrapper {
+    width: 100%;
+    height: 56px;
+    background: #1D85B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    width: 1300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info span{
+    cursor:pointer;
+}
+
+.search {
+    width: 45%;
+}
+.search input{
+    width:100%;
+}
+
+.profile {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profileItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    padding-left:20px;
+}
+
+.profileItem img{
+    height: 30px;
+    width: 30px;
+}
