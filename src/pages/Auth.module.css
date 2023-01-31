@@ -1,0 +1,79 @@
+.wrapForm{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding-top:40px;
+    
+}
+
+.authForm{
+    position:relative;
+    margin-top:40px;
+    height: 400px;
+    padding:20px;
+    background-color: white;
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formItem{
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+    height:3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #00B3F8;
+    padding: 0px 10px 0px 10px;
+    transition: all 0.2s ease-out;   
+}
+.toggleSpan{
+    margin-top: 16px;
+}
+
+
+.formItem:focus{
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+    box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+}
+.formItem:hover{
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+    box-shadow: 0px 0px 2px 1px rgba(30, 77, 112, 0.65);
+}
+.formButton{
+    width: 260px;
+    height:  60px;
+    color:white;
+    background-color:  #00B3F8;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.3rem;
+    cursor:pointer;
+    transition:all 0.2s ease-out;
+}
+.formButton:hover{
+  
+    transform: scale(1.01);
+    background-color:  #3cbff3;
+}
+.formButton:active{
+    background-color: #055e81;
+}
+.cross{
+position:absolute;
+top:18px;
+right:18px;
+width:18px;
+height:18px;
+cursor:pointer;
+color:red;
+}

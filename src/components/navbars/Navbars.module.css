@@ -28,9 +28,11 @@
 
 .search {
     width: 45%;
+    
 }
 .search input{
-    width:100%;
+    width:90%;
+    height:30px;
 }
 
 .profile {
