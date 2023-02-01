@@ -5,6 +5,9 @@ import CreateType from '../components/modalwindow/CreateType'
 import {observer} from 'mobx-react-lite'
 
 
+
+
+
 const Admin = observer( () => {
   
   return (
